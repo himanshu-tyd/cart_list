@@ -65,6 +65,7 @@ body {
   .cart {
     position: relative;
     width: 100%;
+  
 
     .image {
       width: 100%;
@@ -85,7 +86,7 @@ body {
       bottom: 96px;
       background-color: white;
       border-radius: 50px;
-      color: $Rose_900;
+      color: $Rose_500;
       border: 2px solid $Rose_500;
       padding: 10px 25px 10px 25px;
 
@@ -99,6 +100,7 @@ body {
         align-items: center;
         justify-content: space-between;
         color: white;
+    
 
         .increment,
         .decrement {
@@ -165,7 +167,6 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // background-color: #ffffc0;
       padding: 5px;
 
       border-bottom: 1px solid $Rose_300;

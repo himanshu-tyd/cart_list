@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img class="decrement" src='./assets/images/icon-decrement-quantity.svg' alt='minus' />
       </div>`;
       qtyElement.innerHTML = totalQty;
-      cartEl.style = "background-color:hsl(14, 65%, 9%)";
+      cartEl.style = "background-color:hsl(24, 100%, 37%)";
 
       let itemDetails =
        `<div class='qty_items'>

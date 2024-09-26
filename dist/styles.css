@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+.product {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  background: hsl(13, 31%, 94%);
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.container {
+  width: 100%;
+}
+.container .header {
+  width: 100%;
+}
+.container .header .title {
+  color: hsl(14, 65%, 9%);
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.card-container {
+  background: hsl(13, 31%, 94%);
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  line-height: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.card-container .cart {
+  position: relative;
+  width: 100%;
+}
+.card-container .cart .image {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+.card-container .cart .overlay {
+  position: absolute;
+  left: 10%;
+  width: calc(50% - 1rem);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
+  right: 0;
+  left: 50px;
+  bottom: 96px;
+  background-color: white;
+  border-radius: 50px;
+  color: hsl(14, 65%, 9%);
+  border: 2px solid hsl(24, 100%, 37%);
+  padding: 10px 25px 10px 25px;
+}
+.card-container .cart .overlay .add-to-cart {
+  cursor: pointer;
+}
+.card-container .cart .overlay .cart_qty {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.card-container .cart .overlay .cart_qty .increment,
+.card-container .cart .overlay .cart_qty .decrement {
+  cursor: pointer;
+  width: 12px;
+}
+.card-container .cart .category {
+  color: hsl(24, 100%, 37%);
+  margin-top: 40px;
+}
+.card-container .cart .product {
+  font-size: 16px;
+  color: hsl(14, 65%, 9%);
+}
+.card-container .cart .price {
+  color: hsl(24, 100%, 37%);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.bill_container {
+  margin-top: 30px;
+  width: 40%;
+  height: 100%;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .bill_container {
+    width: 100%;
+  }
+}
+.bill_container .cart_title {
+  color: hsl(24, 100%, 37%);
+}
+.bill_container .confirm_btn {
+  width: 100%;
+}
+.bill_container .confirm_btn .btn {
+  width: 100%;
+  border: none;
+  padding: 20px 10px 20px 10px;
+  background-color: hsl(24, 100%, 37%);
+  color: white;
+  font-size: 18px;
+  border-radius: 50px;
+}
+.bill_container .items {
+  width: 100%;
+}
+.bill_container .items .qty_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid hsl(14, 25%, 72%);
+  margin-bottom: 10px;
+  line-height: 10px;
+}
+.bill_container .items .qty_items .details {
+  display: flex;
+  flex-direction: column;
+}
+.bill_container .items .qty_items .details .product_title {
+  font-size: large;
+}
+.bill_container .items .qty_items .details .price_details {
+  display: flex;
+  gap: 10px;
+  color: hsl(24, 100%, 37%);
+  align-items: center;
+}
+.bill_container .items .qty_items .details .price_details .qty_details {
+  color: hsl(24, 100%, 37%);
+  font-size: 18px;
+  font-weight: 900;
+}
+.bill_container .items .qty_items .details .price_details p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.bill_container .items .qty_items .details .price_details p .total_price {
+  font-weight: 400;
+  margin-left: 10px;
+}
+.bill_container .items .qty_items button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 1px solid hsl(7, 20%, 60%);
+}
+.bill_container .items .qty_items button img {
+  color: hsl(24, 100%, 37%);
+}
+
+.empty-message {
+  width: 100%;
+  height: 100;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: hsl(14, 65%, 9%);
+}
+
+.total-amount {
+  color: hsl(24, 100%, 37%);
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

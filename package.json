@@ -1,0 +1,19 @@
+{
+  "name": "product-list-cart",
+  "version": "1.0.0",
+  "description": "![Design preview for the Product list with cart coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass -w styles.scss ./dist/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.79.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0"
+  }
+}
